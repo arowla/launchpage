@@ -1,7 +1,33 @@
-# bashy.io Website
-Website hosted at www.bashy.io
+# Launchpage
+A launchrock like launchpage for your new opensource venture
 
-## Setup locally
+# Features
+
+ - Easy to Setup
+ - Beautifully designed Launchrock Page
+ - Zero-Cost Hosting (using Github-Pages and Mailchimp)
+ - Easy yet flexible YAML-Based Configuration
+ - 100% FLOSS
+ - User-Data Collection (using Mailchimp) and Social-Sharing (with tracking)
+
+# Setup
+
+Do the following steps to get your very own launchrock like launchpage off the ground:
+
+1. Fork this Repo
+2. Configure the Project
+3. Profit!
+
+## Project Configuration
+
+### Describe and Configure the Project Website
+
+### Setup Mailchimp for User Data collection
+
+###
+
+
+# Develop locally
 
 Clone the repo to your local system. Then install [jekyll](http://jekyllrb.com) through bundler:
 
