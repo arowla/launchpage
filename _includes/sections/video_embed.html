@@ -1,0 +1,13 @@
+<div class="video">
+  <div class="video-wrapper">
+    {% if include.payload.youtubeId %}
+      <iframe src="http://www.youtube.com/embed/{{include.payload.youtubeId}}?showinfo=0&iv_load_policy=3&controls=0" frameborder="0" allowfullscreen></iframe>
+    {% else %}
+      {% if include.payload.embedCode %}
+        {{include.payload.embedCode | safe}}
+      {% else %}
+        <h1>Video is not configured right!</h1>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>

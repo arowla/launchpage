@@ -3,7 +3,14 @@ layout: default
 ---
 
 {% for section in site.sections %}
-  <section id="{{section}}">
-    {% include sections/{{section}}.html %}
+
+  {% if section.name %}
+    {% assign name=section.name %}
+  {% else %}
+    {% assign name=section %}
+  {% endif %}
+
+  <section id="{{name}}">
+    {% include sections/{{name}}.html payload=section %}
   </section>
 {% endfor %}

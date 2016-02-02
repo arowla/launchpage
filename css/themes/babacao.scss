@@ -19,7 +19,12 @@ $base-background-color: $base-brown;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base",
       {% for section in site.sections %}
-        "sections/{{section}}",
+        {% if section.name %}
+          {% assign load=section.name %}
+        {% else %}
+          {% assign load=section %}
+        {% endif %}
+        "sections/{{load}}",
       {% endfor %}
         "components/hero.scss",
         "components/global-footer.scss";
