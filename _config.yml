@@ -23,6 +23,13 @@ sections:
     youtubeId: 8ItNE_DX6Cc
     pre: "## With Video Embeds"
     post: "**Markdown and custom content**"
+  - name: phone
+    title: Full Mobile Support
+    content: "Launchpage is using the awesome [bourbon.io](http://bourbon.io/) semantic styling framework from [thoughtbot](http://thoughtbot.com/) allowing us to have full mobile and responsive support build in. There is no more mobile than this.
+
+
+    Oh, and did you notice this neat phone-section example to showcase your app ---> ? This comes for free with launchpage, too."
+    image_url: https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg
 
 # do you have another custom url the primary actions should go to? Put it here!
 primary_action_target: "#signup"
