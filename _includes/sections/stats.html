@@ -1,0 +1,14 @@
+<div class="stats">
+  <ul>
+      {% for stats in site.data.stats %}
+        <li>
+          {{stats.count}}
+          {% if stats.fa-icon %}
+            {% include components/fa-icon.html icon=stats.fa-icon %}
+          {% endif %}
+          {% if stats.title %}
+          <span>{{stats.title}}</span>
+          {% endif %}
+      {% endfor %}
+  </ul>
+</div>

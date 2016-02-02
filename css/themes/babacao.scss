@@ -32,6 +32,24 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
+section {
+  margin: 1em 0;
+  padding: 2em 0;
+  &:nth-child(2n) {
+    background: $base-red;
+    color: white;
+    .stats {
+      li {
+        color: white;
+      }
+    }
+  }
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
 .logo-container{
   background-color: $base-background-color;
   text-align: center;
@@ -60,7 +78,10 @@ body, h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     border-radius: 0.25em;
   }
+}
 
+.stats {
+  font-size: 2em;
 }
 
 .global-footer {
