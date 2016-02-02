@@ -13,7 +13,7 @@
   position: relative;
 
   .hero-background {
-    @include background(center center fixed);
+    @include background(center center);
     top: 0;
     left: 0;
     bottom: 0;

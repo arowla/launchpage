@@ -3,49 +3,49 @@
 @charset "utf-8";
 
 // Typography
-$base-font-family: Times New Roman;
-$heading-font-family: $base-font-family !default;
+$base-font-weight: 300;
+$base-red: #EE0000;
+$base-brown: #25201d;
+$action-color: $base-red;
 
-// Font Sizes
-$base-font-size: 2em !default;
-
-// Line height
-$base-line-height: 1.5 !default;
-$heading-line-height: 1.2 !default;
-
-// Other Sizes
-$base-border-radius: 3px !default;
-$base-spacing: $base-line-height * 1em !default;
-$small-spacing: $base-spacing / 2 !default;
-$base-z-index: 0 !default;
-
-// Colors
-$blue: #1565c0 !default;
-$dark-gray: #333 !default;
-$medium-gray: #999 !default;
-$light-gray: #ddd !default;
-
-// Font Colors
-$base-font-color: $dark-gray !default;
-$action-color: $blue !default;
+$base-font-size: 2em;
 
 // Border
-$base-border-color: $light-gray !default;
-$base-border: 1px solid $base-border-color !default;
+$base-border-color: $base-red;
 
 // Background Colors
-$base-background-color: #fff !default;
-$secondary-background-color: tint($base-border-color, 75%) !default;
-
-// Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06) !default;
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3) !default;
-
-// Animations
-$base-duration: 150ms !default;
-$base-timing: ease !default;
-
+$base-background-color: $base-brown;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "base" ,"components/global-footer.scss";
+@import "base",
+        "components/hero.scss",
+        "components/global-footer.scss";
+
+
+// Customisations for this theme
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight;
+}
+
+.logo-container{
+  background-color: $base-background-color;
+  text-align: center;
+}
+
+.hero {
+  @include background(lighten($base-brown, 10%));
+  .hero-inner {
+    padding: 2.5em .5em;
+    .hero-copy {
+      width: 100%;
+      p {
+        margin-bottom: 0em;
+        @include media($large-screen) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
