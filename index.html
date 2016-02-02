@@ -2,10 +2,8 @@
 layout: default
 ---
 
-<section>
-  <h2>Projects</h2>
-</section>
-
-<section>
-  <h2>Core Values</h2>
-</section>
+{% for section in site.sections %}
+  <section id="{{section}}">
+    {% include sections/{{section}}.html %}
+  </section>
+{% endfor %}

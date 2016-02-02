@@ -1,0 +1,15 @@
+- name: Free Hosting
+  desc: Through Github-Pages hosting and mailchimp for data collection, you can set up and host your project launchpage **without spending a dime**.
+  icon: server
+
+- name: Highly Customisable
+  desc: Pick one of our **awesome themes** and customise them to your needs. Designed with customisability in mind, this has never been easier.
+  fa-icon:
+    name: pencil
+    size: lg
+    inverse: true
+    flip: horizontal
+
+- name: OpenSource
+  desc: fully AGPL-Licensed OpenSource Jekyll-Project, all content under creative commons, your next project launch page is just a github fork away
+  icon_url: http://www.opensourcebash.org/img/sprites/logos-big.svg

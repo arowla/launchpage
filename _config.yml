@@ -16,8 +16,10 @@ contact_email: " ben at create-build-execute dot com"
 theme: babacao
 hero_image: http://c1.staticflickr.com/5/4046/4333386510_89928d2553_b.jpg
 
-# theme customisations: attention, not all work on all themes
-# -------
+sections:
+  # - quotes
+  - features
+  # -
 
 # do you have another custom url the primary actions should go to? Put it here!
 primary_action_target: "#signup"

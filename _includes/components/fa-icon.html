@@ -1,0 +1,24 @@
+{% if include.icon %}
+  {% assign icon=include.icon %}
+{% else %}
+  {% assign icon=include %}
+{% endif %}
+<span class="fa
+
+  {% if icon.size %}
+    fa-{{icon.size}}
+  {% endif %}
+
+  {% if icon.rotate %}
+    fa-rotate-{{icon.rotate}}
+  {% endif %}
+
+  {% if icon.flip %}
+    fa-flip-{{icon.flip}}
+  {% endif %}
+
+  {% if icon.inverse %}
+    fa-inverse
+  {% endif %}
+
+  fa-{{icon.name}}"></span>
