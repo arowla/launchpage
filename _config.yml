@@ -21,6 +21,8 @@ sections:
   - stats
   - name: video_embed
     youtubeId: 8ItNE_DX6Cc
+    pre: "## With Video Embeds"
+    post: "**Markdown and custom content**"
 
 # do you have another custom url the primary actions should go to? Put it here!
 primary_action_target: "#signup"

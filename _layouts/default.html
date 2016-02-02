@@ -7,6 +7,29 @@
 
     {% include themes/{{site.theme}}/header.html %}
 
+
+    {% for section in site.sections %}
+
+      {% if section.name %}
+        {% assign name=section.name %}
+      {% else %}
+        {% assign name=section %}
+      {% endif %}
+
+      <section id="{{name}}">
+        {% if section.pre %}
+          {{section.pre | markdownify }}
+        {% endif %}
+
+        {% include sections/{{name}}.html payload=section %}
+
+        {% if section.post %}
+          {{section.post | markdownify }}
+        {% endif %}
+      </section>
+    {% endfor %}
+
+
     {{ content }}
 
     {% include themes/{{site.theme}}/footer.html %}
