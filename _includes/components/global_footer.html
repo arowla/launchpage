@@ -1,3 +1,46 @@
+<section id="signup" class="formInput">
+  <div class="success">
+    <h2>Hooray</h2>
+    <p>you've succesfully been added to the mailing list! Please don't forget to head over to your inbox and click the confirm link. Meanwhile, here is your personal link for sharing:
+    </p>
+    <p>
+      <input type="text" id="shareLink" value="" />
+      <a class="sharer" target="_blank" data-href="https://twitter.com/intent/tweet?text={{site.social_share.twitter_text | escape }}&url=">tweet</a> <a class="sharer" target="_blank" data-href="https://www.facebook.com/sharer/sharer.php?u=">facebook share</a> <a class="sharer" target="_blank" data-href="mailto:?suject=Check+Out+{{site.title}}&body={{site.social_share.email_text | escape}}+">email</a>
+    </p>
+    <p>
+      <a class="js-reset" href="">add another</a>
+    </p>
+
+  </div>
+  <div class="loading">
+    <h3>Loading</h3>
+  </div>
+
+  <div class="error">
+    <h2>Oh, noes</h2>
+    <p>
+      <strong>Something went wrong:</strong> <span id="errorMessage"></span>
+    </p>
+    <a class="js-reset" href="">try again</a>
+  </div>
+  <form id="mailchimpForm" class="formInput"  action="https://{{site.mailchimp.server}}/subscribe/post-json" method="POST">
+    <input type="hidden" value="{{site.mailchimp.user}}" name="u" />
+    <input type="hidden" value="{{site.mailchimp.id}}" name="id" />
+    <input id="js-hidden-source" type="hidden" value="" name="SOURCE" />
+    <input id="js-hidden-referrer" type="hidden" value="" name="REFERRER" />
+    <input id="js-hidden-code" type="hidden" value="" name="CODE" />
+    <input type="text" name="NAME" required placeholder="{% if site.signup.placeholder.name %}{{site.signup.placeholder.name}}}{% else %}Your name{% endif %}" />
+    <input type="text" id="js-email" name="EMAIL" required placeholder="{% if site.signup.placeholder.email %}{{site.signup.placeholder.email}}}{% else %}Your email{% endif %}" />
+    <button type="submit">
+      {% if site.signup.buttonText %}
+        {{site.signup | safe }}
+      {% else %}
+        Submit
+      {% endif %}
+    </button>
+  </form>
+</section>
+
 <footer class="global-footer" role="contentinfo">
   <p>
     Build using <a href="http://www.bashy.io/projects/launchpage" target="_blank">Bashy Launchpage</a> – an OpenSource, freely hosted Launchpage Project for you. <a href="https://github.com/bashyHQ/launchpage/" Fork it now</a> and build your own.

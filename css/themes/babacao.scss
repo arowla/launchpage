@@ -26,8 +26,8 @@ $base-background-color: $base-brown;
         {% endif %}
         "sections/{{load}}",
       {% endfor %}
-        "components/hero.scss",
-        "components/global-footer.scss";
+
+      "components/hero";
 
 
 

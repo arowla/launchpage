@@ -11,6 +11,11 @@ github_username:  bashyHQ
 facebook_page: ben
 contact_email: " ben at create-build-execute dot com"
 
+mailchimp:
+  server: bashy.us12.list-manage.com
+  user: 78092809e918ff81694633576
+  id: 67d717b36f
+
 # theme and design settings
 
 theme: babacao
