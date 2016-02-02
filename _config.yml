@@ -1,4 +1,4 @@
-# Site settings
+# Site content settings
 title: Bashy
 logo_url: http://www.opensourcebash.org/img/sprites/logos-big.svg
 claim: "OpenSource for Humans"
@@ -10,7 +10,16 @@ twitter_username: bashyHQ
 github_username:  bashyHQ
 facebook_page: ben
 contact_email: " ben at create-build-execute dot com"
+
+# theme and design settings
+
+theme: babacao
+hero_image: http://c1.staticflickr.com/5/4046/4333386510_89928d2553_b.jpg
+
 # Build settings
 markdown: kramdown
 
-hero_image: http://c1.staticflickr.com/5/4046/4333386510_89928d2553_b.jpg
+
+# plugins and stuff
+gems:
+  - jekyll-seo-tag
