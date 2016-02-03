@@ -107,8 +107,24 @@ section {
     padding: 2em 4em;
     background-color: $base-red;
     color: white;
-    p, input {
-      max-width: 45%;
+    position: relative;
+    @include media($large-screen) {
+      p, input {
+        max-width: 45%;
+      }
+
+      &::after {
+        content: " ";
+        display: block;
+        width: 35%;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        bottom: 10%;
+        background: url(https://farm9.staticflickr.com/8493/8280699806_d5bdff2252_z_d.jpg) no-repeat center center;
+        z-index: 100;
+        background-size: contain;
+      }
     }
   }
 }

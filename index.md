@@ -20,7 +20,6 @@ sections:
     pre: "## With Video Embeds"
     post: "**Markdown and custom content**"
 
-
 hero_image: https://farm1.staticflickr.com/81/254414081_65f18b86a3_b_d.jpg
 
 signup:
