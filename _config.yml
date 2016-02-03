@@ -24,6 +24,8 @@ sections:
   - hero
   - stats
   - features
+  - name: screenshots
+    pre: "# Themes"
   - name: phone
     title: Full Mobile Support
     content: "Launchpage is using the awesome [bourbon.io](http://bourbon.io/) semantic styling framework from [thoughtbot](http://thoughtbot.com/) allowing us to have full mobile and responsive support build in. There is no more mobile than this.
@@ -34,8 +36,6 @@ sections:
 
   - name: video_embed
     youtubeId: 8ItNE_DX6Cc
-#    pre: "## With Video Embeds"
-#    post: "**Markdown and custom content**"
 
 hero_image: https://farm1.staticflickr.com/81/254414081_65f18b86a3_b_d.jpg
 
