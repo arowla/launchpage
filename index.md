@@ -34,6 +34,6 @@ social_share:
 
 
 credits:
-  "Build using [Bashy Launchpage](http://www.bashy.io/projects/launchpage) – an OpenSource, freely hosted Launchpage Project for you.[Fork it now](https://github.com/bashyHQ/launchpage/) to build your own.
+  "Build using [Bashy Launchpage](http://www.bashy.io/projects/launchpage) – an OpenSource, freely hosted Launchpage Project for you. [Fork it now](https://github.com/bashyHQ/launchpage/) to build your own.
   Images by [Steve Juventus](https://www.flickr.com/photos/jurvetson/254414081/) and [Tom Hilton](https://www.flickr.com/photos/tomhilton/16224193869/)."
 ---
