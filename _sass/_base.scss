@@ -1,15 +1,19 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-@import "components/alert";
 
 $alert-color: #fff6bf !default;
 $error-color: #fbe3e4 !default;
 $loading-color: #e5edf8 !default;
 $success-color: #e6efc2 !default;
 
+@import "components/alert";
 @import "components/global-footer";
 
+@import "sections/features";
+@import "sections/phone";
+@import "sections/stats";
+@import "sections/video_embed";
 
 body {
   padding: 0;

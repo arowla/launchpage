@@ -1,0 +1,26 @@
+
+
+{% if include.a %}
+  {% assign value=include.a %}
+{% else %}
+  {% if include.b %}
+    {% assign value=include.b %}
+  {% else %}
+    {% if include.c %}
+      {% assign value=include.c %}
+    {% else %}
+      {% assign value="" %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% case include.render %}
+  {% when "safe" %}
+    {{ value | safe }}
+  {% when "md" or "markdownify" %}
+    {{ value | markdownify }}
+  {% when "esc" or "escape" %}
+    {{ value | escape }}
+  {% else %}
+    {{ value }}
+{% endcase %}

@@ -4,7 +4,7 @@
 
 // Typography
 $base-font-weight: 300;
-$base-red: #EE0000;
+$base-red: #9c1408;
 $base-brown: #25201d;
 $action-color: $base-red;
 
@@ -14,24 +14,20 @@ $base-font-size: 1.2em;
 
 // Background Colors
 $base-background-color: $base-brown;
+// $base-font-color: white;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "base",
-      {% for section in site.sections %}
-        {% if section.name %}
-          {% assign load=section.name %}
-        {% else %}
-          {% assign load=section %}
-        {% endif %}
-        "sections/{{load}}",
-      {% endfor %}
-
-      "components/hero";
+@import "base";
 
 
 
 // Customisations for this theme
+
+#{$all-text-inputs} {
+  color: $base-red;
+  font-weight: 300;
+}
 
 body, h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
@@ -61,7 +57,10 @@ section {
 }
 
 .hero {
-  @include background(lighten($base-brown, 10%));
+  @include background(darken($base-red, 30%));
+  .hero-background {
+    opacity: 0.4;
+  }
   .hero-inner {
     padding: 2.5em .5em;
     .hero-copy {
@@ -87,6 +86,21 @@ section {
 
 .stats {
   font-size: 2em;
+}
+
+#signup {
+  padding: 0;
+  .success .loading .error {
+    margin: 0;
+  }
+  .formInput {
+    padding: 2em 4em;
+    background-color: $base-red;
+    color: white;
+    p, input {
+      max-width: 45%;
+    }
+  }
 }
 
 .global-footer {

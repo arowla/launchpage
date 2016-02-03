@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 
+  {% assign theme=site.theme %}
+  {% if page.theme %}
+    {% assign theme=page.theme %}
+  {% endif %}
+
   {% include head.html %}
 
   <body>
 
-    {% include themes/{{site.theme}}/header.html %}
+    {% include themes/{{theme}}/header.html %}
 
 
-    {% for section in site.sections %}
+    {% assign sections=site.sections %}
+    {% if page.sections %}
+      {% assign sections=page.sections %}
+    {% endif %}
+
+    {% for section in sections %}
 
       {% if section.name %}
         {% assign name=section.name %}
@@ -32,7 +42,7 @@
 
     {{ content }}
 
-    {% include themes/{{site.theme}}/footer.html %}
+    {% include themes/{{theme}}/footer.html %}
 
     {% include components/global_footer.html %}
 
