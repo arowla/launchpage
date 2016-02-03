@@ -39,8 +39,11 @@
       </section>
     {% endfor %}
 
-
-    {{ content }}
+    {% if content %}
+      <section id="content">
+        {{ content }}
+      </section>
+    {% endif %}
 
     {% include themes/{{theme}}/footer.html %}
 

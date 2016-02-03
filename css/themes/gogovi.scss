@@ -1,0 +1,151 @@
+---
+---
+@charset "utf-8";
+
+// Typography
+$base-font-weight: 400;
+$base-font-family: "Open Sans", sans-serif;
+$base-yellow: #d7df21;
+$action-color: #0098c4;
+
+// Border
+$base-border-color: #0098c4;
+$base-font-size: 1.2em;
+
+// Background Colors
+$base-background-color: rgba(0,0,0,.9);
+$base-font-color: white;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base";
+
+
+// Customisations for this theme
+
+#{$all-text-inputs} {
+  color: $action-color;
+  font-weight: 300;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight;
+}
+
+section {
+  padding: 2em 0;
+  color: white;
+  background: $base-background-color;
+
+  &:first-of-type{
+    padding-top: 6em;
+  }
+}
+
+
+#stats {
+  background: $action-color;
+  color: darken($action-color, 25%);
+  .stats {
+    li {
+      color: lighten($action-color, 25%);
+    }
+  }
+}
+
+#content {
+  @include background(linear-gradient(135deg, red, yellow));
+  color: white;
+  padding: 2em;
+}
+
+
+#{$all-buttons} {
+  border-radius: 0;
+  border: 1px solid #d7df21;
+  background: transparent;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10em;
+  padding: 0.5em;
+  z-index: 5;
+  text-align: left;
+  img {
+    height: 5em;
+    margin-left: 3em;
+  }
+}
+
+
+#hero {
+  @include background(darken($action-color, 30%));
+  .hero-background {
+    opacity: 0.4;
+  }
+  .hero-inner {
+    padding: 2.5em .5em;
+    .hero-copy {
+      width: 100%;
+      font-size: 1.8em;
+      p {
+        margin-bottom: 0em;
+        @include media($large-screen) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .primary-action-button {
+    margin: 1em 0;
+    padding: 0.5em 2em;
+    background-color: $base-yellow;
+    color: black;
+    display: inline-block;
+    border-radius: 5em;
+  }
+}
+
+.stats {
+  font-size: 2em;
+}
+
+#signup {
+  padding: 0;
+  .success .loading .error {
+    margin: 0;
+  }
+  .formInput {
+    padding: 2em 4em;
+    color: white;
+    position: relative;
+    input {
+      max-width: 35%;
+      margin-right: 2%;
+      display: inline-block;
+    }
+    button {
+      max-width: 25%;
+      display: inline-block;
+    }
+  }
+}
+
+#phone {
+  margin: 10em 0;
+  .device-background {
+    @include background(linear-gradient(135deg, yellow, $action-color, darken($action-color, 25%)));
+  }
+}
+
+.global-footer {
+  background-color: $base-background-color;
+  border-top: 1px solid darken($action-color, 20%);
+  color: white;
+  font-size: 0.8em;
+}

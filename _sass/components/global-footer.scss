@@ -28,9 +28,10 @@
 
   a.sharer, a.js-reset {
     text-decoration: none;
+    color: $action-color;
     margin: 0.25em;
     padding: 0.25em 0.5em;
-    border: 1px solid !important;
+    border: 1px solid $action-color !important;
     border-radius: 0.25em;
   }
 
