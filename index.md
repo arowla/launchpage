@@ -3,8 +3,9 @@ layout: default
 theme: babacao
 
 sections:
-  - features
+  - hero
   - stats
+  - features
   - name: phone
     title: Full Mobile Support
     content: "Launchpage is using the awesome [bourbon.io](http://bourbon.io/) semantic styling framework from [thoughtbot](http://thoughtbot.com/) allowing us to have full mobile and responsive support build in. There is no more mobile than this.

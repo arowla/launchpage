@@ -1,0 +1,13 @@
+
+<div class="hero">
+  <div class="hero-background" style="background-image:url({% include components/render.html a=include.payload.hero_image b=page.hero_image c=site.hero_image render="safe" %})" ></div>
+	<div class="hero-inner">
+		<div class="hero-copy">
+			<h1>{% include components/render.html a=include.payload.claim b=page.claim c=site.claim %}</h1>
+			{% include components/render.html a=include.payload.description b=page.description c=site.description render="md" %}
+      <p>
+        <a class="primary-action-button" href="{% include components/render.html a=include.payload.primary_action.target b=page.primary_action.target c=site.primary_action.target d='signup' render='safe' %}">{% include components/render.html a=include.payload.primary_action.text b=page.primary_action.text c=site.primary_action.text d='Hook me up' render="safe" %}</a>
+      </p>
+		</div>
+	</div>
+</div>

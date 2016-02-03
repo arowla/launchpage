@@ -16,13 +16,5 @@ mailchimp:
   user: 78092809e918ff81694633576
   id: 67d717b36f
 
-# do you have another custom url the primary actions should go to? Put it here!
-primary_action_target: "#signup"
-
 # Build settings
 markdown: kramdown
-
-
-# plugins and stuff
-gems:
-  - jekyll-seo-tag
