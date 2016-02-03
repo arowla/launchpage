@@ -26,6 +26,14 @@
     display: block;
   }
 
+  a.sharer, a.js-reset {
+    text-decoration: none;
+    margin: 0.25em;
+    padding: 0.25em 0.5em;
+    border: 1px solid !important;
+    border-radius: 0.25em;
+  }
+
 }
 
 

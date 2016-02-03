@@ -5,7 +5,15 @@
     </p>
     <p>
       <input type="text" id="shareLink" value="" />
-      <a class="sharer" target="_blank" data-href="https://twitter.com/intent/tweet?text={{site.social_share.twitter_text | escape }}&url=">tweet</a> <a class="sharer" target="_blank" data-href="https://www.facebook.com/sharer/sharer.php?u=">facebook share</a> <a class="sharer" target="_blank" data-href="mailto:?suject=Check+Out+{{site.title}}&body={{site.social_share.email_text | escape}}+">email</a>
+      <a class="sharer" target="_blank" data-href="https://twitter.com/intent/tweet?text={{site.social_share.twitter_text | escape }}&url=">
+        {% include components/fa-icon.html name="twitter" %} tweet
+      </a>
+      <a class="sharer" target="_blank" data-href="https://www.facebook.com/sharer/sharer.php?u=">
+        {% include components/fa-icon.html name="facebook-square" %} share
+      </a>
+      <a class="sharer" target="_blank" data-href="mailto:?suject=Check+Out+{{site.title}}&body={{site.social_share.email_text | escape}}+">
+        {% include components/fa-icon.html name="envelope" %} email
+      </a>
     </p>
     <p>
       <a class="js-reset" href="">add another</a>
@@ -24,6 +32,9 @@
     <a class="js-reset" href="">try again</a>
   </div>
   <form id="mailchimpForm" class="formInput"  action="https://{{site.mailchimp.server}}/subscribe/post-json" method="POST">
+
+    {{ site.signup_text | markdownify }}
+    
     <input type="hidden" value="{{site.mailchimp.user}}" name="u" />
     <input type="hidden" value="{{site.mailchimp.id}}" name="id" />
     <input id="js-hidden-source" type="hidden" value="" name="SOURCE" />

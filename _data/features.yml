@@ -3,12 +3,18 @@
   icon: server
 
 - name: Highly Customisable
-  desc: Pick one of our **awesome themes** and customise them to your needs. Designed with customisability in mind, this has never been easier.
+  desc: Pick one of our **awesome themes** and customise them to your needs. Based on established technologies and designed with customisability in mind, this has never been easier.
   fa-icon:
-    name: pencil
+    name: code
     size: lg
     inverse: true
-    flip: horizontal
+
+- name: Viral Tracking with Local Cache
+  desc: Through using mailchimp in clever way, launchpage allows for clever **viral tracking over multiple sources** once the user signed up. And it even caches it locally – so when the user returns, they automatically have the very same tracking code.
+  fa-icon:
+    name: share-alt
+    size: lg
+    inverse: true
 
 - name: OpenSource
   desc: fully AGPL-Licensed OpenSource Jekyll-Project, all content under creative commons, your next project launch page is just a github fork away

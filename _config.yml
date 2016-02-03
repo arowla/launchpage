@@ -16,6 +16,16 @@ mailchimp:
   user: 78092809e918ff81694633576
   id: 67d717b36f
 
+
+signup_text: >
+  # Test it out
+
+  put your **name and email** below to check out how it works and get your social sharing links!
+
+
+social_share:
+  twitter_text: This is just awesome!
+
 # theme and design settings
 
 theme: babacao

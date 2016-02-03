@@ -250,7 +250,7 @@ if (sources) {
 }
 
 // keep the referrer
-$('#js-reset').click(function(evt){
+$('.js-reset').click(function(evt){
   evt.preventDefault()
   switch_form_state('formInput')
 })
