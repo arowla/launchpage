@@ -28,8 +28,7 @@
     padding: 2em;
 
     @include media($large-screen) {
-      float: left;
-      max-width: 50%;
+      max-width: 60%;
       padding: 4em;
     }
 

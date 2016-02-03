@@ -1,11 +1,13 @@
-<div class="device-background">
+<div class="device-background" {% if include.payload.extra_styles %}style="{{include.payload.extra_styles}}"{% endif %}>
+
+  <div class="device">
+    <div class="screen" style="background-image: url({{include.payload.image_url}})"></div>
+  </div>
+  
   <div class="device-text">
     <h4>{{include.payload.title}}</h4>
     {% if include.payload.content %}
       {{include.payload.content || markdownify }}
     {% endif %}
-  </div>
-  <div class="device">
-    <div class="screen" style="background-image: url({{include.payload.image_url}})"></div>
   </div>
 </div>
