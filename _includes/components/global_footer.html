@@ -34,7 +34,7 @@
   <form id="mailchimpForm" class="formInput"  action="https://{{site.mailchimp.server}}/subscribe/post-json" method="POST">
 
     {{ site.signup_text | markdownify }}
-    
+
     <input type="hidden" value="{{site.mailchimp.user}}" name="u" />
     <input type="hidden" value="{{site.mailchimp.id}}" name="id" />
     <input id="js-hidden-source" type="hidden" value="" name="SOURCE" />
@@ -52,8 +52,6 @@
   </form>
 </section>
 
-<footer class="global-footer" role="contentinfo">
-  <p>
-    Build using <a href="http://www.bashy.io/projects/launchpage" target="_blank">Bashy Launchpage</a> – an OpenSource, freely hosted Launchpage Project for you. <a href="https://github.com/bashyHQ/launchpage/" Fork it now</a> and build your own.
-  </p>
+<footer class="global-footer" role="credits">
+  {{site.credits | markdownify }}
 </footer>
