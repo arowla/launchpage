@@ -59,6 +59,10 @@ section {
 .logo-container{
   background-color: $base-background-color;
   text-align: center;
+  img {
+    height: 5em;
+    margin: 0.5em;
+  }
 }
 
 
