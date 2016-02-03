@@ -31,12 +31,11 @@ sections:
 
     Oh, and did you notice this neat phone-section example to showcase your app? This comes for free with launchpage, too."
     image_url: https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg
-    extra_styles: "background-color: #333333"
 
   - name: video_embed
     youtubeId: 8ItNE_DX6Cc
-    pre: "## With Video Embeds"
-    post: "**Markdown and custom content**"
+#    pre: "## With Video Embeds"
+#    post: "**Markdown and custom content**"
 
 hero_image: https://farm1.staticflickr.com/81/254414081_65f18b86a3_b_d.jpg
 
