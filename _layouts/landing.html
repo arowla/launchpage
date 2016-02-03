@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% assign theme=site.theme %}
+{% if page.theme %}
+  {% assign theme=page.theme %}
+{% endif %}
+
+{% include themes/{{theme}}/header.html %}
+
+
+{% assign sections=site.sections %}
+{% if page.sections %}
+  {% assign sections=page.sections %}
+{% endif %}
+
+{% for section in sections %}
+
+  {% if section.name %}
+    {% assign name=section.name %}
+  {% else %}
+    {% assign name=section %}
+  {% endif %}
+
+  <section id="{{name}}">
+    {% if section.pre %}
+      {{section.pre | markdownify }}
+    {% endif %}
+
+    {% include sections/{{name}}.html payload=section %}
+
+    {% if section.post %}
+      {{section.post | markdownify }}
+    {% endif %}
+  </section>
+{% endfor %}
+
+{% if content %}
+  <section id="content">
+    {{ content }}
+  </section>
+{% endif %}
+
+{% include themes/{{theme}}/footer.html %}

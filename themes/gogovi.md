@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: landing
 theme: gogovi
 
 hero_image: https://farm9.staticflickr.com/8065/8218269421_f258070a26_k_d.jpg # https://farm9.staticflickr.com/8629/16224193869_2ac56a7771_k_d.jpg
