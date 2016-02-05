@@ -4,7 +4,7 @@ logo_url: http://www.opensourcebash.org/img/sprites/logos-big.svg
 claim: "Launchpage for OpenSource Projects"
 description: > # this means to ignore newlines until "baseurl:"
   Gauge whether there is a bigger interest in your idea with this easy launch page, specifically designed for OpenSource Projects.
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://launchpage.bashy.io" # the base hostname & protocol for your site
 twitter_username: bashyHQ
 github_username:  bashyHQ
